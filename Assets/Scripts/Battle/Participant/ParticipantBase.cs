@@ -6,29 +6,29 @@ public class ParticipantBase : MonoBehaviour
 {
     protected FieldManager _fieldManager;
 
-    public virtual IEnumerable DrawPhase()
+    public virtual IEnumerator DrawPhase()
     {
         yield return null;
     }
 
-    public virtual IEnumerable StandByPhase()
+    public virtual IEnumerator StandByPhase()
     {
         yield return null;
     }
 
-    public virtual IEnumerable MainPhase()
-    {
-        yield return null;
-    }
-
-
-    public virtual IEnumerable BattlePhase()
+    public virtual IEnumerator MainPhase()
     {
         yield return null;
     }
 
 
-    public virtual IEnumerable MainPhase2()
+    public virtual IEnumerator BattlePhase()
+    {
+        yield return null;
+    }
+
+
+    public virtual IEnumerator MainPhase2()
     {
         yield return null;
     }
