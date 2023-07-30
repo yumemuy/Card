@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardBase
+public class Enemy : ParticipantBase
 {
-    public virtual void SetParam(int id) { }
 }

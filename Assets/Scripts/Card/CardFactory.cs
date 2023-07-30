@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardBase
+public class CardFactory : MonoBehaviour
 {
-    public virtual void SetParam(int id) { }
 }

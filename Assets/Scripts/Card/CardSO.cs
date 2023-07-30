@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "CardSO",menuName ="Create Card")]
+[CreateAssetMenu(fileName = "CardSO", menuName ="Create Card")]
 public class CardSO : ScriptableObject
 {
     // ƒpƒ‰ƒ[ƒ^
