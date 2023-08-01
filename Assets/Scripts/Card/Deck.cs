@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Deck : MonoBehaviour
 {
-    private List<CardBase> _cardList;
+    private List<int> _deck;
 
     public void Shuffle()
     {
     }
 
-    public void Draw()
+    public int Draw()
     {
+        return 1;
     }
 }

@@ -9,6 +9,7 @@ public class Enemy : ParticipantBase
         Debug.Log("ドローフェイズ　－開始－");
 
         yield return new WaitForSeconds(3.0f);
+        PhaseActions.Draw(_fieldManager.CardDeck, _fieldManager.HandField.transform);
 
         Debug.Log("ドローフェイズ　－終了－");
     }

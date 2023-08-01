@@ -14,12 +14,16 @@ public class FieldManager : MonoBehaviour
     private GameObject _monsterField;
     [SerializeField]
     private GameObject _magicField;
+    [SerializeField]
+    private Deck _cardDeck;
 
     public GameObject HandField => _handField;
 
     public GameObject MonsterField => _monsterField;
 
     public GameObject MagicField => _magicField;
+
+    public Deck CardDeck => _cardDeck;
 
     public void SetLife(int life)
     {

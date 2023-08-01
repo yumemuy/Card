@@ -31,7 +31,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2713580891003601614}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -242,7 +242,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2713580891003601614}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -414,8 +414,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 873cbd737938ab34ea79727503936211, type: 2}
+  m_sharedMaterial: {fileID: -3128540360135168601, guid: 873cbd737938ab34ea79727503936211, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -491,6 +491,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2713580891003601614}
   - component: {fileID: 2713580891003601613}
+  - component: {fileID: 3133800002342125532}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -512,8 +513,8 @@ RectTransform:
   m_Children:
   - {fileID: 2713580889987918042}
   - {fileID: 2713580890821123745}
-  - {fileID: 2713580890795996880}
   - {fileID: 2713580889467960062}
+  - {fileID: 2713580890795996880}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -530,3 +531,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2713580891003601615}
   m_CullTransparentMesh: 1
+--- !u!114 &3133800002342125532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2713580891003601615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7570c06841fbd82479feb6f00799c1eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nameText: {fileID: 2713580890821123744}
+  _atkText: {fileID: 2713580889467960061}
+  _defText: {fileID: 2713580890795996895}
