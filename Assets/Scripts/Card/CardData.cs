@@ -22,9 +22,7 @@ public class CardData : MonoBehaviour
 
     public void SetParam(int id)
     {
-        _cardParam = Resources.Load(ASSET_PATH + id.ToString()) as CardSO;
-        Debug.Log(ASSET_PATH + id.ToString());
-        Debug.Log(_cardParam);
+        _cardParam = Resources.Load<CardSO>(ASSET_PATH + id.ToString());
         _cardKind = _cardParam.kind;
     }
 }

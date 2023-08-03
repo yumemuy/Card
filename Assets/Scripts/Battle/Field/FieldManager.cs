@@ -11,17 +11,17 @@ public class FieldManager : MonoBehaviour
     [SerializeField]
     private GameObject _handField;
     [SerializeField]
-    private GameObject _monsterField;
+    private GameObject _monsterZone;
     [SerializeField]
-    private GameObject _magicField;
+    private GameObject _magicZone;
     [SerializeField]
     private Deck _cardDeck;
 
     public GameObject HandField => _handField;
 
-    public GameObject MonsterField => _monsterField;
+    public GameObject MonsterField => _monsterZone;
 
-    public GameObject MagicField => _magicField;
+    public GameObject MagicField => _magicZone;
 
     public Deck CardDeck => _cardDeck;
 

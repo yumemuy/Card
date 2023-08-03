@@ -16,12 +16,18 @@ public class BattleManager : MonoBehaviour
     private ParticipantBase _enemy;
     private bool _isPlayerTurn;
     private bool _isTurnEnd;
+    private bool _isFirstTurn;
+    private bool _isGameEnd;
+    private bool _isGameStart;
 
-    void Start()
+    private void Start()
     {
         InitParticipant();
         _isPlayerTurn = true;
         _isTurnEnd = true;
+        _isFirstTurn = true;
+        _isGameEnd = false;
+        _isGameStart = false;
     }
 
     private void InitParticipant()
@@ -37,26 +43,34 @@ public class BattleManager : MonoBehaviour
         _enemy.SetFieldManager(enemy_field.GetComponent<FieldManager>());
     }
 
-    private void Update()
+    private void PreparationGame()
     {
-        if (_isPlayerTurn)
-        {
-            if (_isTurnEnd)
-                StartCoroutine(TurnFunc(_player));
-        }
-        else
-        {
-            if (_isTurnEnd)
-                StartCoroutine(TurnFunc(_enemy));
-        }
+        // デッキシャッフル
+        _player.fieldManager.CardDeck.Shuffle();
+        _enemy.fieldManager.CardDeck.Shuffle();
+
+        // 手札用意
+        PhaseActions.InitHand(_player.fieldManager);
+        PhaseActions.InitHand(_enemy.fieldManager);
     }
 
-    public IEnumerator TurnFunc(ParticipantBase participant)
+    private void Update()
+    {
+        if (!_isGameStart)
+        {
+            PreparationGame();
+            _isGameStart = true;
+        }
+
+        StartCoroutine(GameMain());
+    }
+
+    private IEnumerator TurnFunc(ParticipantBase participant)
     {
         _isTurnEnd = false;
 
         // ドロー
-        yield return participant.DrawPhase();
+        yield return participant.DrawPhase(_isFirstTurn);
 
         // スタンバイ
         yield return participant.StandByPhase();
@@ -71,6 +85,15 @@ public class BattleManager : MonoBehaviour
         yield return participant.MainPhase2();
 
         _isTurnEnd = true;
+        _isFirstTurn = false;
         _isPlayerTurn = !_isPlayerTurn;
+    }
+
+    private IEnumerator GameMain()
+    {
+        if (_isTurnEnd)
+        {
+            yield return TurnFunc(_isPlayerTurn ? _player : _enemy);
+        }
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1472850004271767016}
   - component: {fileID: 2175254675491181789}
   - component: {fileID: 2639924821121060482}
+  - component: {fileID: 2751490265638858484}
   m_Layer: 5
   m_Name: MagicField1
   m_TagString: Untagged
@@ -101,6 +102,19 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &2751490265638858484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40229021857035083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ae41d424ce6324789eef718ebdf96d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}
 --- !u!1 &970159777870985619
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,6 +127,7 @@ GameObject:
   - component: {fileID: 5307484959123620469}
   - component: {fileID: 739887554259516471}
   - component: {fileID: 812053720458906873}
+  - component: {fileID: 5637674644231058032}
   m_Layer: 5
   m_Name: MonsterFiled3
   m_TagString: Untagged
@@ -202,6 +217,19 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &5637674644231058032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970159777870985619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ae41d424ce6324789eef718ebdf96d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}
 --- !u!1 &1142151962875846009
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,8 +240,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2518697462707674475}
   - component: {fileID: 5175721882098605098}
+  - component: {fileID: 1238168714833134182}
   m_Layer: 0
-  m_Name: MagicField
+  m_Name: MagicZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -268,6 +297,24 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &1238168714833134182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142151962875846009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fda8332f7486fd44b8230f8ab3602e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zone:
+  - {fileID: 2751490265638858484}
+  - {fileID: 3006362320004704133}
+  - {fileID: 5896890098287805671}
+  - {fileID: 7543118813102817333}
+  - {fileID: 4062815384183013075}
 --- !u!1 &1638872712600460103
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,8 +325,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4087333505859216851}
   - component: {fileID: 3535298408399090596}
+  - component: {fileID: 131493694683893052}
   m_Layer: 5
-  m_Name: MonsterField
+  m_Name: MonsterZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -334,6 +382,24 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &131493694683893052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638872712600460103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fda8332f7486fd44b8230f8ab3602e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zone:
+  - {fileID: 1390039157072744299}
+  - {fileID: 3127701604678117244}
+  - {fileID: 5637674644231058032}
+  - {fileID: 3628631986921808942}
+  - {fileID: 4431850405419445811}
 --- !u!1 &2550499334640421769
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +412,7 @@ GameObject:
   - component: {fileID: 8750821024568636799}
   - component: {fileID: 745603225479197498}
   - component: {fileID: 1610429745819664363}
+  - component: {fileID: 4431850405419445811}
   m_Layer: 5
   m_Name: MonsterFiled5
   m_TagString: Untagged
@@ -435,6 +502,19 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &4431850405419445811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2550499334640421769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ae41d424ce6324789eef718ebdf96d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}
 --- !u!1 &3453666715985883534
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,6 +662,7 @@ GameObject:
   - component: {fileID: 7055341070230811802}
   - component: {fileID: 2225102181836017874}
   - component: {fileID: 2041941123921197462}
+  - component: {fileID: 5896890098287805671}
   m_Layer: 5
   m_Name: MagicField3
   m_TagString: Untagged
@@ -671,6 +752,19 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &5896890098287805671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3495913860351056862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ae41d424ce6324789eef718ebdf96d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}
 --- !u!1 &3824494104622680314
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,6 +777,7 @@ GameObject:
   - component: {fileID: 4183614753562782544}
   - component: {fileID: 5617246974156215485}
   - component: {fileID: 5552875387487281060}
+  - component: {fileID: 7543118813102817333}
   m_Layer: 5
   m_Name: MagicField4
   m_TagString: Untagged
@@ -772,6 +867,19 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &7543118813102817333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3824494104622680314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ae41d424ce6324789eef718ebdf96d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}
 --- !u!1 &3847104065085183517
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,6 +892,7 @@ GameObject:
   - component: {fileID: 3557393315839505303}
   - component: {fileID: 7840906741331390975}
   - component: {fileID: 2930451918726019639}
+  - component: {fileID: 3127701604678117244}
   m_Layer: 5
   m_Name: MonsterFiled2
   m_TagString: Untagged
@@ -873,6 +982,19 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &3127701604678117244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3847104065085183517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ae41d424ce6324789eef718ebdf96d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}
 --- !u!1 &3854881481653777973
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,6 +1007,7 @@ GameObject:
   - component: {fileID: 8803278770067264456}
   - component: {fileID: 903707448698683376}
   - component: {fileID: 5960943673753799100}
+  - component: {fileID: 1390039157072744299}
   m_Layer: 5
   m_Name: MonsterFiled1
   m_TagString: Untagged
@@ -974,6 +1097,19 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &1390039157072744299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3854881481653777973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ae41d424ce6324789eef718ebdf96d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}
 --- !u!1 &4687568416108394447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,8 +1742,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lifeView: {fileID: 8766399333673100632}
   _handField: {fileID: 9038261273480974492}
-  _monsterField: {fileID: 3854881481653777973}
-  _magicField: {fileID: 40229021857035083}
+  _monsterZone: {fileID: 1638872712600460103}
+  _magicZone: {fileID: 1142151962875846009}
   _cardDeck: {fileID: 940317154869004236}
 --- !u!1 &7164902276581269515
 GameObject:
@@ -1756,6 +1892,7 @@ GameObject:
   - component: {fileID: 6362679702111630030}
   - component: {fileID: 8756767100438450656}
   - component: {fileID: 7800089159604949320}
+  - component: {fileID: 3628631986921808942}
   m_Layer: 5
   m_Name: MonsterFiled4
   m_TagString: Untagged
@@ -1845,6 +1982,19 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &3628631986921808942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7709037356471477827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ae41d424ce6324789eef718ebdf96d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}
 --- !u!1 &7899071702141614575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,6 +2007,7 @@ GameObject:
   - component: {fileID: 107323696159340884}
   - component: {fileID: 4857088505795173738}
   - component: {fileID: 9027766774098350440}
+  - component: {fileID: 3006362320004704133}
   m_Layer: 5
   m_Name: MagicField2
   m_TagString: Untagged
@@ -1946,6 +2097,19 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &3006362320004704133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7899071702141614575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ae41d424ce6324789eef718ebdf96d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}
 --- !u!1 &8604375881483001322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1958,6 +2122,7 @@ GameObject:
   - component: {fileID: 2391023690136359522}
   - component: {fileID: 6521533981047591031}
   - component: {fileID: 4610375226676203080}
+  - component: {fileID: 4062815384183013075}
   m_Layer: 5
   m_Name: MagicField5
   m_TagString: Untagged
@@ -2047,6 +2212,19 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &4062815384183013075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8604375881483001322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ae41d424ce6324789eef718ebdf96d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}
 --- !u!1 &8887988550071734125
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,6 +2372,7 @@ GameObject:
   - component: {fileID: 8239718932773791313}
   - component: {fileID: 652211932830882195}
   - component: {fileID: 2784220853220002038}
+  - component: {fileID: 3420142852450649481}
   m_Layer: 5
   m_Name: Hand
   m_TagString: Untagged
@@ -2283,3 +2462,16 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 2
   m_ConstraintCount: 1
+--- !u!114 &3420142852450649481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9038261273480974492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4466533ac51ae34429676f5d429d936d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handCards: []

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : ParticipantBase
 {
-    public override IEnumerator DrawPhase()
+    public override IEnumerator DrawPhase(bool is_first_turn)
     {
         Debug.Log("ドローフェイズ　－開始－");
 

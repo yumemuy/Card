@@ -6,7 +6,9 @@ public class ParticipantBase : MonoBehaviour
 {
     protected FieldManager _fieldManager;
 
-    public virtual IEnumerator DrawPhase()
+    public FieldManager fieldManager => _fieldManager;
+
+    public virtual IEnumerator DrawPhase(bool is_first_turn)
     {
         yield return null;
     }
